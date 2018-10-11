@@ -1,0 +1,30 @@
+baadalservervm@baadalvm: ~/hadoop-2.8.1$ hadoop fsck /wordcount/input/inp2.txt -files -locations -blocks
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+17/10/21 18:20:40 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Connecting to namenode via http://hadoop-master:50070/fsck?ugi=baadalservervm&files=1&locations=1&blocks=1&path=%2Fwordcount%2Finput%2Finp2.txt
+FSCK started by baadalservervm (auth:SIMPLE) from /10.17.5.91 for path /wordcount/input/inp2.txt at Sat Oct 21 18:20:42 IST 2017
+/wordcount/input/inp2.txt 94281021 bytes, 1 block(s):  OK
+0. BP-1035421894-127.0.1.1-1504946808916:blk_1073741845_1021 len=94281021 Live_repl=2 [DatanodeInfoWithStorage[10.17.6.73:50010,DS-44dd804c-f945-42a5-b0a3-09ae524cee0f,DISK], DatanodeInfoWithStorage[10.17.6.18:50010,DS-7d1958c0-420e-4a22-b873-e5f642c67acb,DISK]]
+
+Status: HEALTHY
+ Total size:    94281021 B
+ Total dirs:    0
+ Total files:   1
+ Total symlinks:                0
+ Total blocks (validated):      1 (avg. block size 94281021 B)
+ Minimally replicated blocks:   1 (100.0 %)
+ Over-replicated blocks:        0 (0.0 %)
+ Under-replicated blocks:       0 (0.0 %)
+ Mis-replicated blocks:         0 (0.0 %)
+ Default replication factor:    2
+ Average block replication:     2.0
+ Corrupt blocks:                0
+ Missing replicas:              0 (0.0 %)
+ Number of data-nodes:          3
+ Number of racks:               1
+FSCK ended at Sat Oct 21 18:20:42 IST 2017 in 6 milliseconds
+
+
+The filesystem under path '/wordcount/input/inp2.txt' is HEALTHY
